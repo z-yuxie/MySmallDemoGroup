@@ -29,7 +29,7 @@ public class RequestLimiterTest {
             System.out.println("当前最老节点时间戳：" +
                     (requestLimiter.getHead() != null ? requestLimiter.getHead().getTimestamp() : null));
             boolean canBeAccepted = requestLimiter.canBeAccepted(timestamp);
-            System.out.println("是否允许改请求向下传递：" + canBeAccepted);
+            System.out.println("是否允许该请求向下传递：" + canBeAccepted);
             System.out.println("调用后链表长度：" + requestLimiter.getLength());
             System.out.println("-------------------第" + i + "次结束----------------------");
         }
