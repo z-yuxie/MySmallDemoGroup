@@ -60,7 +60,7 @@ public class RequestLimiter {
     /**
      * 新传入的请求是否允许向下传递
      * @param timestamp 最新一次请求的的时间戳（这个请求参数是否是必须要调用方传入的？）
-     * @return 改请求是否允许向下传递
+     * @return 该请求是否允许向下传递
      */
     public synchronized boolean canBeAccepted (long timestamp) {
         // 第一次调用时，链表为空
